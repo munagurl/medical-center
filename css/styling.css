@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-bar-container::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.nav-brand,
+.nav-menu,
+.cta-btn-group{
+    float: left;
+    width: 20%;
+}
