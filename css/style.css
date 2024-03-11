@@ -95,7 +95,7 @@ a{text-decoration: none;}
 
 /*************************************Buttons*************** */
 .btn{
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
     border-radius: 7px;
     transition: all .3s;
@@ -112,10 +112,25 @@ a{text-decoration: none;}
 } 
 
 .btn.btn-full{
-    background-color: var(--primary-orange);
     color: #fff;
+    border: 2px solid transparent;
 }
-
+.btn.btn-orange{
+    background-color: var(--primary-orange);
+    
+}
+.btn.btn-blue{
+    background-color: var(--primary-color);
+}
+.btn.btn-orange:hover{
+    border-color: var(--primary-orange);
+    background-color: transparent;
+    color: var(--primary-orange);
+}
+.contact-btn-group{
+    float: right;
+    margin-top: -50px;
+}
 
 /*********************************** Hero Section ******************/
 .hero-container{
@@ -176,33 +191,26 @@ a{text-decoration: none;}
 }
 
 .row [class^="col-"]:not(:last-child){
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
 .col-1-of-2{
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 40px) / 2);
 }
 
 .col-1-of-3{
-    width: calc((100% - (60px * 2)) / 3);
+    width: calc((100% - (40px * 2)) / 3);
+}
+.col-1-of-4{
+    width: calc((100% - (40px * 3)) / 4);
 }
 
 /*********************************** Utility Classes ******************/
-.u-margin-bottom-sm{
-    margin-bottom: 40px;
-}
-.u-margin-bottom-md{
-    margin-bottom: 60px;
-}
-.u-center-text{
-    text-align: center;
-}
+.u-margin-bottom-sm{ margin-bottom: 40px; }
+.u-margin-bottom-md{ margin-bottom: 60px; }
+.u-center-text{ text-align: center; }
 
 /*********************************** Headings ******************/
-.section-heading{
-
-}
-
 .section-heading h3{
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -287,3 +295,199 @@ a{text-decoration: none;}
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
  }
+
+ .statistics-container{
+    margin-top: 50px;
+ }
+
+ .statistics{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 110px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 7px;
+    float: left;
+    margin-right: 30px;
+ }
+
+.statistics h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.statistics span{
+    font-weight: bold;
+}
+
+
+/*********************************** Section Top Rated Doctors ******************/
+.section-top-doctors{
+    padding: 100px 0;
+}
+
+.doctor-card{
+    padding: 22px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.doctor-figure{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.doctor-figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.doctor-card h2{
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.doctor-card p{
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.doctor-rating{ margin-bottom: 35px;}
+.doctor-rating i{
+    color: var(--primary-orange);
+    font-size: 10px;
+}
+
+/*********************************** Section Testimonial ******************/
+.section-testimonial{
+    background-color: var(--darker-gray);
+    padding: 100px 0;
+}
+
+.testimonial{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 7px rgba(0,0, 0, 0.2);
+    clear: both;
+    display: table;
+   
+}
+
+
+.testimonial-figure{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+}
+.testimonial-text{
+    float: right;
+    width: 230px;
+    margin-left: 10px;
+}
+.testimonial-figure img{
+    height: 100%;
+    width: 100%;
+}
+.testimonial-text h2{
+    color: #2e2d2d;
+    font-size: 14px;
+}
+
+.testimonial-text span{
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.testimonial-ratings i{
+    color:  var(--primary-orange);
+    font-size: 12px;
+}
+
+.testimonial-text p{
+    color: #2e2d2d;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/*********************************** Section Contact Us ******************/
+.section-contact{
+    padding: 100px 0;
+}
+
+.contact-box{
+   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/doctor-5.jpg');
+   background-size: cover;
+    border-radius: 5px;
+    height: 350px;
+    padding: 100px 70px;
+}
+.contact-heading span{
+    display: block;
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.contact-heading span:nth-child(1){
+    color: var(--primary-color);
+}
+
+.contact-heading span:nth-child(2){
+   font-weight: bold;
+}
+/* *********************************** Section Blog ******************/ 
+.section-blog{
+    padding: 100px 0;
+}
+
+.blog{
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0,0, 0, 0.1);
+    overflow: hidden;
+}
+.blog-figure{
+    height: 210px;
+    overflow: hidden;
+}
+
+.blog-figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.blog-text{
+    padding: 30px;
+}
+
+.blog-text span{
+    font-size: 16px;
+    color: #757171;
+}
+
+.blog-text h2{
+    font-size: 25px;
+    margin: 12px 0; 
+}
+
+.blog-text p{
+    font-size: 16px;
+    color: #757171;
+    margin-bottom: 12px;
+}
+
+.blog-text a{
+    font-size: 16px;
+    color: var(--primary-orange);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+
+
