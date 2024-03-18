@@ -24,25 +24,21 @@ a{text-decoration: none;}
     margin-bottom: 7px;
 }
 
-
 .nav-contents{
     max-width: 1140px;
     margin: 0 auto;
-   
 }
 
-.nav-contents::after{
+.nav-contents{
     content: "";
-    clear:left;
+    clear: left;
     display: table;
 }
 
 .nav-content{
     float: left;
 }
-.nav-brand-group{
 
-}
 .nav-brand-group a{
     font-weight: 600;
     color: #000;
@@ -488,6 +484,84 @@ a{text-decoration: none;}
     margin-bottom: 12px;
     text-transform: uppercase;
 }
+
+/* *********************************** Footer ******************/ 
+.footer{
+    background-color: #204c4d;
+    padding: 100px 0;
+}
+.footer-nav{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.footer-nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer-logo{
+    height: 70px;
+    vertical-align: middle;
+}
+.footer-logo-group{
+    float: left;
+}
+.footer-logo-group a{
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-nav-menu{
+    float: right;
+    margin-top: 27px;
+}
+
+.footer-nav-item{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav-link{
+    color: #fff;
+}
+.footer-nav-link:hover{
+    color: var(--primary-color);
+}
+
+hr{
+    max-width: 1140px;
+    margin: 10px auto;
+}
+
+.footer-social-icons{
+   
+}
+.footer-social-icons ul{
+    text-align: center;
+
+    padding: 30px 0;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-social-icons ul li a{
+    color: var(--primary-color);
+}
+
+.footer-copy{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
 
 
 
