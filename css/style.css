@@ -23,24 +23,28 @@ a{text-decoration: none;}
     box-shadow: 0px 10px 40px #ccc;
     margin-bottom: 7px;
 }
-
 .nav-contents{
     max-width: 1140px;
     margin: 0 auto;
 }
-
-.nav-contents{
+.nav-contents::after{
     content: "";
     clear: left;
     display: table;
 }
 
+
 .nav-content{
     float: left;
 }
 
-.nav-brand-group a{
-    font-weight: 600;
+.nav-content .nav-logo{
+    height: 50px;
+    vertical-align: middle;
+}
+
+.nav-content .brand-name{
+    text-decoration: none;
     color: #000;
 }
 
@@ -55,6 +59,7 @@ a{text-decoration: none;}
     margin-right: 15px;
    
 }
+
 .nav-content .nav-list .nav-link:link,
 .nav-content .nav-list .nav-link:active,
 .nav-content .nav-list .nav-link:visited{
@@ -80,14 +85,6 @@ a{text-decoration: none;}
     margin-top: 12px;
 }
 
-.nav-content .nav-logo{
-    height: 50px;
-    vertical-align: middle;
-}
-.nav-content .brand-name{
-    /* text-decoration: none;
-    color: #000; */
-}
 
 /*************************************Buttons*************** */
 .btn{
@@ -123,15 +120,12 @@ a{text-decoration: none;}
     background-color: transparent;
     color: var(--primary-orange);
 }
-.contact-btn-group{
-    float: right;
-    margin-top: -50px;
-}
+
 
 /*********************************** Hero Section ******************/
 .hero-container{
     background-color: var(--darker-gray);
-    height: 90vh;
+    height: 100vh;
     padding: 100px 0;
 }
 
@@ -154,7 +148,7 @@ a{text-decoration: none;}
 
 .heading-secondary{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .hero-img-container{
@@ -564,4 +558,17 @@ hr{
 
 
 
+@media screen and (max-width: 480px){
+    html{
+        /* font-size: 50%; This represent 8px 8/16*100 = 8px */
+    }
+    .nav-bar{
+       background-color: blue;
+    }
+}
 
+@media screen and (max-width: 600px){
+    .nav-bar{
+       background-color: red;
+    }
+}
